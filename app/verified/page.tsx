@@ -4,9 +4,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 import EyeGlyph from "@/components/EyeGlyph";
 
 export const metadata: Metadata = {
-  title: "Verified & Safety Warnings",
+  title: "Verified & Safety Warnings — Illuminati Foundation",
   description:
-    "Official disclaimers, safety warnings, and fictional concept disclosures for the Illuminati Foundation project.",
+    "Official verification, safety directives, and anti-fraud warnings issued by the Illuminati Foundation. Protect yourself from unauthorized imposters.",
 };
 
 function PageLabel({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function VerifiedPage() {
   return (
     <article className="max-w-3xl mx-auto px-6 py-12">
       {/* ══════════════════════════════════════════
-          PAGE HEADER (Clean & Legible)
+          PAGE HEADER
       ══════════════════════════════════════════ */}
       <header className="pt-12 pb-12 border-b border-foreground/15 mb-12">
         <ScrollReveal>
@@ -33,40 +33,42 @@ export default function VerifiedPage() {
         </ScrollReveal>
         <ScrollReveal delay={0.05}>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-foreground font-semibold leading-tight mb-6">
-            Official Disclaimer &amp; Safety Directives
+            Official Verification &amp; Safety Directives
           </h1>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="font-mono text-sm text-foreground/75 leading-relaxed bg-accent/10 border-l-2 border-accent p-4">
-            <strong>NOTICE:</strong> This website is an immersive fictional
-            horror concept and educational design project. It does not represent
-            a real secret society, organization, or financial entity.
+            <strong>NOTICE:</strong> This page is issued directly by the
+            Illuminati Foundation to protect the public from unauthorized
+            imposters, fraudulent recruiters, and criminal networks misusing our
+            name and identity.
           </p>
         </ScrollReveal>
       </header>
 
       {/* ══════════════════════════════════════════
-          PROJECT DISCLOSURE
+          OFFICIAL STATEMENT
       ══════════════════════════════════════════ */}
       <section className="space-y-4">
         <ScrollReveal>
           <h2 className="font-display text-2xl md:text-3xl text-foreground font-medium mb-4">
-            Fictional Concept Disclosure
+            Official Statement of Authenticity
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={0.05}>
           <p className="font-mono text-sm text-foreground/80 leading-relaxed">
-            The Illuminati Foundation (&quot;ILLUM&quot;) presented on this
-            website is entirely a work of fiction, worldbuilding, and modern web
-            application prototyping. All lore, symbols, ranks, and historical
-            case files are designed purely for entertainment and educational
-            purposes.
+            The Illuminati Foundation is the sole legitimate body operating
+            under this name and insignia. Our operations, communications, and
+            directives are distributed exclusively through verified and
+            authenticated channels. Any entity soliciting on our behalf through
+            unauthorized means is acting without sanction.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="font-mono text-sm text-foreground/80 leading-relaxed">
-            No real-world initiation, membership, or occult authority is offered
-            or implied.
+            Our identity, symbols, and communications are protected. We do not
+            operate through social media recruitment pages, unsolicited direct
+            messages, or third-party intermediaries of any kind.
           </p>
         </ScrollReveal>
       </section>
@@ -79,20 +81,24 @@ export default function VerifiedPage() {
       <section className="space-y-4">
         <ScrollReveal>
           <h2 className="font-display text-2xl md:text-3xl text-accent font-medium mb-4">
-            Protection Against Real-World Scams
+            Protection Against Imposters & Fraud
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={0.05}>
           <p className="font-mono text-sm text-foreground/80 leading-relaxed">
-            Real-world fraudsters frequently use the name &quot;Illuminati&quot;
-            to conduct advance-fee fraud, phishing schemes, and social
-            engineering attacks on social media platforms.
+            Criminal networks routinely exploit our name to conduct advance-fee
+            fraud, phishing operations, and social engineering campaigns across
+            social media, messaging platforms, and email. These actors have no
+            affiliation with the Foundation and represent a direct threat to
+            public safety.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="font-mono text-sm text-foreground/80 leading-relaxed">
-            Be vigilant: legitimate organizations will never request money or
-            personal credentials over anonymous internet channels.
+            The Foundation will never solicit money, personal credentials, or
+            private information through anonymous internet channels. If you have
+            been contacted by someone claiming to represent us, do not engage —
+            report it immediately to your local authorities.
           </p>
         </ScrollReveal>
       </section>
@@ -100,7 +106,7 @@ export default function VerifiedPage() {
       <Divider />
 
       {/* ══════════════════════════════════════════
-          DO NOT SEND ANYTHING (Bulleted List)
+          DO NOT SEND ANYTHING
       ══════════════════════════════════════════ */}
       <section className="space-y-6">
         <ScrollReveal>
@@ -111,9 +117,9 @@ export default function VerifiedPage() {
 
         <ScrollReveal delay={0.05}>
           <p className="font-mono text-sm text-foreground/70 mb-4">
-            Under no circumstances should you ever submit or transmit any of the
-            following items to anyone claiming to represent this project or any
-            related group:
+            Under no circumstances should you submit or transmit any of the
+            following to anyone claiming to represent this Foundation or any
+            affiliated group. Anyone who requests these items is an imposter:
           </p>
         </ScrollReveal>
 
@@ -122,29 +128,29 @@ export default function VerifiedPage() {
             <li className="leading-relaxed">
               <strong className="text-foreground">Financial Assets:</strong> Do
               not send money, wire transfers, credit card details, or
-              cryptocurrency (Bitcoin, Ethereum, etc.).
+              cryptocurrency of any kind.
             </li>
             <li className="leading-relaxed">
               <strong className="text-foreground">
                 Personal Identification:
               </strong>{" "}
-              Do not share Social Security Numbers, passport scans, national ID
-              cards, or birth certificates.
+              Do not share government IDs, passport scans, national ID cards, or
+              birth certificates.
             </li>
             <li className="leading-relaxed">
               <strong className="text-foreground">Security Credentials:</strong>{" "}
               Do not disclose passwords, private keys, seed phrases, or
-              two-factor authentication tokens.
+              authentication tokens under any pretext.
             </li>
             <li className="leading-relaxed">
-              <strong className="text-foreground">Physical Addresses:</strong>{" "}
-              Do not provide home addresses, phone numbers, or private location
-              data.
+              <strong className="text-foreground">Location Data:</strong>{" "}
+              Do not provide home addresses, daily routines, phone numbers, or
+              private location information.
             </li>
             <li className="leading-relaxed">
-              <strong className="text-foreground">Illegal Commitments:</strong>{" "}
-              Do not engage in or promise unlawful behavior, self-harm, or
-              damage to property.
+              <strong className="text-foreground">Unlawful Acts:</strong>{" "}
+              Do not engage in, finance, or commit to any illegal activity on
+              behalf of any person claiming Foundation authority.
             </li>
           </ul>
         </ScrollReveal>
@@ -153,7 +159,7 @@ export default function VerifiedPage() {
       <Divider />
 
       {/* ══════════════════════════════════════════
-          OFFICIAL VERIFICATION STATEMENT
+          VERIFICATION INTEGRITY
       ══════════════════════════════════════════ */}
       <section className="space-y-4">
         <ScrollReveal>
@@ -163,9 +169,18 @@ export default function VerifiedPage() {
         </ScrollReveal>
         <ScrollReveal delay={0.05}>
           <p className="font-mono text-sm text-foreground/80 leading-relaxed">
-            This web application serves as a complete demonstration of Next.js
-            14, Tailwind CSS, TypeScript, and modern UI component architecture.
-            All components and styling tokens are open for code inspection.
+            All legitimate communications from the Illuminati Foundation are
+            traceable to this domain and issued through authenticated internal
+            channels. Our sigil, protocols, and chain of communication are
+            subject to strict internal verification standards that no impersonator
+            can replicate.
+          </p>
+        </ScrollReveal>
+        <ScrollReveal delay={0.1}>
+          <p className="font-mono text-sm text-foreground/80 leading-relaxed">
+            If you are uncertain whether a communication is genuine, do not
+            respond. Contact us only through the official channels listed on
+            this site.
           </p>
         </ScrollReveal>
       </section>
@@ -181,7 +196,7 @@ export default function VerifiedPage() {
         </ScrollReveal>
         <ScrollReveal delay={0.05}>
           <p className="font-mono text-xs text-foreground/50 tracking-wider mb-8">
-            Verified Educational Concept • End of Directives
+            Officially Verified • End of Directives
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>

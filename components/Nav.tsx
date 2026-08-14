@@ -33,11 +33,10 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "backdrop-blur-md bg-background/80 border-b border-foreground/10 shadow-[0_1px_24px_rgba(0,0,0,0.6)]"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav
         className="mx-auto max-w-7xl px-6 h-14 flex items-center justify-between"
@@ -67,11 +66,10 @@ export default function Nav() {
               <li key={label}>
                 <Link
                   href={href}
-                  className={`font-mono text-[0.7rem] tracking-widest uppercase transition-colors duration-200 relative py-1 ${
-                    isActive
+                  className={`font-mono text-[0.7rem] tracking-widest uppercase transition-colors duration-200 relative py-1 ${isActive
                       ? "text-accent font-semibold"
                       : "text-foreground/60 hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {label}
                   {isActive && (
@@ -99,28 +97,24 @@ export default function Nav() {
           onClick={() => setMenuOpen((v) => !v)}
         >
           <span
-            className={`block w-6 h-px bg-foreground transition-transform duration-300 origin-center ${
-              menuOpen ? "translate-y-[7px] rotate-45" : ""
-            }`}
+            className={`block w-6 h-px bg-foreground transition-transform duration-300 origin-center ${menuOpen ? "translate-y-[7px] rotate-45" : ""
+              }`}
           />
           <span
-            className={`block w-6 h-px bg-foreground transition-opacity duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
+            className={`block w-6 h-px bg-foreground transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""
+              }`}
           />
           <span
-            className={`block w-6 h-px bg-foreground transition-transform duration-300 origin-center ${
-              menuOpen ? "-translate-y-[7px] -rotate-45" : ""
-            }`}
+            className={`block w-6 h-px bg-foreground transition-transform duration-300 origin-center ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""
+              }`}
           />
         </button>
       </nav>
 
       {/* Mobile dropdown */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-400 ${
-          menuOpen ? "max-h-96 border-b border-foreground/10" : "max-h-0"
-        } backdrop-blur-md bg-background/90`}
+        className={`lg:hidden overflow-hidden transition-all duration-400 ${menuOpen ? "max-h-96 border-b border-foreground/10" : "max-h-0"
+          } backdrop-blur-md bg-background/90`}
       >
         <ul className="flex flex-col px-6 py-4 gap-4">
           {NAV_LINKS.map(({ label, href }) => {
@@ -130,11 +124,10 @@ export default function Nav() {
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className={`font-mono text-[0.7rem] tracking-widest uppercase transition-colors block ${
-                    isActive
+                  className={`font-mono text-[0.7rem] tracking-widest uppercase transition-colors block ${isActive
                       ? "text-accent font-semibold pl-2 border-l-2 border-accent"
                       : "text-foreground/60 hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {label}
                 </Link>

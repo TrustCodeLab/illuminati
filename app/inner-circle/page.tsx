@@ -228,11 +228,10 @@ export default function InnerCirclePage() {
         ].map((line, i) => (
           <ScrollReveal key={i} delay={i * 0.06}>
             <p
-              className={`font-mono text-sm leading-relaxed mb-3 ${
-                line === "It is a map." || line === "Study it."
+              className={`font-mono text-sm leading-relaxed mb-3 ${line === "It is a map." || line === "Study it."
                   ? "text-foreground/80"
                   : "text-foreground/55"
-              }`}
+                }`}
             >
               {line}
             </p>
@@ -355,11 +354,10 @@ export default function InnerCirclePage() {
         ].map((line, i) => (
           <ScrollReveal key={i} delay={i * 0.06}>
             <p
-              className={`font-mono text-sm leading-relaxed mb-3 ${
-                line.startsWith("Until then")
+              className={`font-mono text-sm leading-relaxed mb-3 ${line.startsWith("Until then")
                   ? "text-foreground/80 pl-4 border-l border-accent/40"
                   : "text-foreground/55"
-              }`}
+                }`}
             >
               {line}
             </p>

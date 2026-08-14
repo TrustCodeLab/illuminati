@@ -38,9 +38,8 @@ function BodyLine({
 }) {
   return (
     <p
-      className={`font-mono text-sm leading-relaxed mb-3 ${
-        dim ? "text-foreground/40" : "text-foreground/65"
-      } ${indent ? "pl-4 border-l border-accent/30" : ""}`}
+      className={`font-mono text-sm leading-relaxed mb-3 ${dim ? "text-foreground/40" : "text-foreground/65"
+        } ${indent ? "pl-4 border-l border-accent/30" : ""}`}
     >
       {children}
     </p>

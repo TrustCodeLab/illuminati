@@ -397,9 +397,8 @@ export default function SymbolsPage() {
           >
             {/* Full-width inner container */}
             <div
-              className={`max-w-6xl mx-auto px-6 py-24 md:py-36 flex flex-col ${
-                isEven ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center gap-16 md:gap-24`}
+              className={`max-w-6xl mx-auto px-6 py-24 md:py-36 flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"
+                } items-center gap-16 md:gap-24`}
             >
               {/* ── Glyph & Image ── */}
               <div className="flex-shrink-0 flex flex-col items-center justify-center w-full md:w-80">
@@ -446,11 +445,10 @@ export default function SymbolsPage() {
                 {symbol.lines.map((line, i) => (
                   <ScrollReveal key={i} delay={0.07 + i * 0.06}>
                     <p
-                      className={`font-mono text-sm leading-relaxed mb-2.5 ${
-                        (symbol.accentLines as readonly string[]).includes(line)
+                      className={`font-mono text-sm leading-relaxed mb-2.5 ${(symbol.accentLines as readonly string[]).includes(line)
                           ? "text-foreground/85 pl-4 border-l border-accent/40"
                           : "text-foreground/55"
-                      }`}
+                        }`}
                     >
                       {line}
                     </p>
@@ -523,13 +521,12 @@ export default function SymbolsPage() {
         ].map((line, i) => (
           <ScrollReveal key={i} delay={0.15 + i * 0.07} className="mb-2">
             <p
-              className={`font-mono text-sm tracking-wider ${
-                line === "Structure. Witness. Knowledge. Continuity."
+              className={`font-mono text-sm tracking-wider ${line === "Structure. Witness. Knowledge. Continuity."
                   ? "text-accent/70 mt-4 mb-4 tracking-[0.15em]"
                   : line === "Everything else is detail."
                     ? "text-foreground/80 font-medium"
                     : "text-foreground/50"
-              }`}
+                }`}
             >
               {line}
             </p>

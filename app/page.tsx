@@ -259,11 +259,10 @@ export default function HomePage() {
         ].map((line, i) => (
           <ScrollReveal key={i} delay={i * 0.06} className="mb-3">
             <p
-              className={`font-mono text-sm leading-relaxed ${
-                line.startsWith("Every") || line.startsWith("We were")
+              className={`font-mono text-sm leading-relaxed ${line.startsWith("Every") || line.startsWith("We were")
                   ? "text-foreground/40 pl-4 border-l border-accent/30"
                   : "text-foreground/65"
-              }`}
+                }`}
             >
               {line}
             </p>
@@ -358,11 +357,10 @@ export default function HomePage() {
         ].map((line, i) => (
           <ScrollReveal key={i} delay={i * 0.07} className="mb-3">
             <p
-              className={`font-mono text-sm leading-relaxed ${
-                line.startsWith("Immense riches")
+              className={`font-mono text-sm leading-relaxed ${line.startsWith("Immense riches")
                   ? "text-accent font-semibold tracking-wider pl-4 border-l border-accent"
                   : "text-foreground/65"
-              }`}
+                }`}
             >
               {line}
             </p>

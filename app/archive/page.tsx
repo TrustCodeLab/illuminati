@@ -252,9 +252,8 @@ export default function ArchivePage() {
                     {file.clearance}
                   </span>
                   <span
-                    className={`font-mono text-[0.65rem] font-semibold tracking-widest px-2.5 py-0.5 border ${
-                      STATUS_STYLES[file.status]
-                    }`}
+                    className={`font-mono text-[0.65rem] font-semibold tracking-widest px-2.5 py-0.5 border ${STATUS_STYLES[file.status]
+                      }`}
                   >
                     {file.status}
                   </span>
