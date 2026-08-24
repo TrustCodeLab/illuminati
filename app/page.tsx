@@ -59,9 +59,9 @@ export default function HomePage() {
 
         {/* Main heading */}
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] mb-8 max-w-4xl relative z-10">
-          Wealth &amp; Power
+          How to Join Illuminati
           <br />
-          <em className="text-accent not-italic">Belong To Those Who See.</em>
+          <em className="text-accent not-italic">wealth And Power Belong To Those Who See.</em>
         </h1>
 
         {/* Taglines — enticing wealth & status hooks */}
