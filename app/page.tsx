@@ -53,7 +53,7 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-accent/40 bg-accent/10 rounded-none">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             <span className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-accent font-semibold">
-              UNLIMITED PROSPERITY • GLOBAL INFLUENCE • SOVEREIGN WEALTH
+             WEALTH • FAME • PROTECTION 
             </span>
           </div>
         </ScrollReveal>
