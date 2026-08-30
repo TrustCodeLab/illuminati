@@ -3,6 +3,7 @@ import Image from "next/image";
 import EyeGlyph from "@/components/EyeGlyph";
 import ScrollReveal from "@/components/ScrollReveal";
 import ContactSection from "@/components/ContactSection";
+import BenefitsSection from "@/components/BenefitsSection";
 
 /* ─── Reusable section label ──────────────────────────────── */
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -124,6 +125,13 @@ export default function HomePage() {
           <div className="w-px h-10 bg-foreground animate-[scrollCue_2s_ease-in-out_infinite]" />
         </div>
       </section>
+
+      {/* ══════════════════════════════════════════
+          THE FOUR PILLARS: FAME · WEALTH · POWER · PROTECTION
+      ══════════════════════════════════════════ */}
+      <Divider />
+
+      <BenefitsSection />
 
       {/* ══════════════════════════════════════════
           THE FOUNDATION
