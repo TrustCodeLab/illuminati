@@ -27,7 +27,7 @@ const monoFont = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: {
     default: " Illuminati1 They Were Always Watching",
-    template: "%s | Illuminati1",
+    template: "%s | Illuminati",
   },
   description:
     "A foundation devoted to sight. To memory. To those who refused to look away. Classified materials authorised access only.",
