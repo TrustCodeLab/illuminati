@@ -59,12 +59,16 @@ export default function HomePage() {
         </ScrollReveal>
 
         {/* Main heading */}
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] mb-8 max-w-4xl relative z-10">
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] mb-4 max-w-4xl relative z-10">
           How to Join The Illuminati
-          <br />
-          <em className="text-accent not-italic">Wealth & Power Belong To Those Who See.</em>
         </h1>
 
+        {/* Description / Subtitle */}
+        <ScrollReveal delay={0.08} className="relative z-10 mb-6">
+          <p className="font-mono text-sm sm:text-base text-foreground/70 leading-relaxed max-w-lg">
+            Wealth &amp; Power Belong To Those Who See.
+          </p>
+        </ScrollReveal>
         {/* Taglines — enticing wealth & status hooks */}
         <div className="flex flex-col gap-1.5 mb-10 max-w-lg relative z-10">
           <ScrollReveal delay={0.1}>

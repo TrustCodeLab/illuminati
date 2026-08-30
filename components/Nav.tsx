@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import EyeGlyph from "./EyeGlyph";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -48,10 +48,12 @@ export default function Nav() {
           className="flex items-center gap-2.5 group"
           aria-label="ILLUM — Home"
         >
-          <EyeGlyph
-            animated
-            size={28}
-            className="text-accent transition-colors duration-300 group-hover:text-foreground"
+          <Image
+            src="/images/logo.png"
+            alt="Illuminati Foundation Logo"
+            width={36}
+            height={36}
+            className="object-contain transition-all duration-300"
           />
           <span className="font-display text-xl tracking-[0.3em] uppercase text-foreground group-hover:text-accent transition-colors duration-300">
             666
