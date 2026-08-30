@@ -25,7 +25,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════
           HERO
       ══════════════════════════════════════════ */}
-      <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[92vh] pt-10 pb-14 px-6 text-center overflow-hidden">
         {/* Ambient background image — visible but dim */}
         <div
           aria-hidden="true"
@@ -43,54 +43,51 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
         </div>
 
-        {/* Animated eye */}
-        <div className="mb-10 opacity-90 relative z-10">
-          <EyeGlyph animated size={180} className="text-accent" />
+        {/* Brand Eye Emblem */}
+        <div className="mb-4 opacity-90 relative z-10">
+          <EyeGlyph animated size={110} className="text-accent" />
         </div>
 
         {/* Wealth & Prosperity Teaser Badge */}
         <ScrollReveal delay={0.05} className="relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-accent/40 bg-accent/10 rounded-none">
-            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            <span className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-accent font-semibold">
-             WEALTH • FAME • PROTECTION 
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mb-3 border border-accent/40 bg-accent/10">
+            <span className="w-1 h-1 rounded-full bg-accent animate-pulse" />
+            <span className="font-mono text-[0.55rem] tracking-[0.2em] uppercase text-accent font-medium">
+              WEALTH • FAME • PROTECTION 
             </span>
           </div>
         </ScrollReveal>
 
-        {/* Main heading */}
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] mb-4 max-w-4xl relative z-10">
-          How to Join The Illuminati
-        </h1>
-
-        {/* Description / Subtitle */}
-        <ScrollReveal delay={0.08} className="relative z-10 mb-6">
-          <p className="font-mono text-sm sm:text-base text-foreground/70 leading-relaxed max-w-lg">
+        {/* Main Heading Group */}
+        <div className="relative z-10 max-w-5xl mb-6">
+          <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight text-foreground leading-[0.95] mb-4">
+            How to Join The Illuminati
+          </h1>
+          <p className="font-mono text-[0.7rem] sm:text-xs tracking-[0.25em] text-accent/90 font-medium uppercase">
             Wealth &amp; Power Belong To Those Who See.
           </p>
-        </ScrollReveal>
-        {/* Taglines — enticing wealth & status hooks */}
-        <div className="flex flex-col gap-1.5 mb-10 max-w-lg relative z-10">
-          <ScrollReveal delay={0.1}>
-            <p className="font-mono text-[0.8rem] tracking-widest text-foreground/80">
-              Beyond the veil of ordinary life lies absolute financial freedom.
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.2}>
-            <p className="font-mono text-[0.75rem] tracking-widest text-foreground/50">
-              The Illuminati Foundation guides those destined for immense fortune.
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.3}>
-            <p className="font-mono text-[0.75rem] tracking-widest text-accent/80 font-semibold">
-              Step into abundance. Command your destiny.
-            </p>
-          </ScrollReveal>
         </div>
 
+        {/* Taglines / Guidance Group */}
+        <ScrollReveal delay={0.15} className="relative z-10 mb-8 max-w-xl">
+          <div className="py-4 px-6 border-y border-foreground/10 bg-background/30 backdrop-blur-sm space-y-2">
+            <p className="font-mono text-xs sm:text-sm tracking-widest text-foreground/80 leading-relaxed">
+              Beyond the veil of ordinary life lies absolute financial freedom.
+            </p>
+            <p className="font-mono text-[0.7rem] sm:text-xs tracking-wider text-foreground/50 leading-relaxed">
+              The Illuminati Foundation guides those destined for immense fortune.
+            </p>
+            <div className="pt-1.5">
+              <span className="inline-block font-mono text-[0.55rem] sm:text-[0.6rem] tracking-[0.2em] text-accent font-medium uppercase px-2.5 py-0.5 border border-accent/30 bg-accent/5">
+                Step into abundance. Command your destiny.
+              </span>
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* Highlight Stats Ticker */}
-        <ScrollReveal delay={0.35} className="relative z-10">
-          <div className="grid grid-cols-3 gap-6 sm:gap-12 py-4 px-6 border-y border-foreground/10 mb-12 max-w-xl">
+        <ScrollReveal delay={0.25} className="relative z-10">
+          <div className="grid grid-cols-3 gap-6 sm:gap-12 py-3 px-6 border-y border-foreground/10 mb-8 max-w-xl">
             <div>
               <p className="font-display text-2xl sm:text-3xl text-foreground">$∞</p>
               <p className="font-mono text-[0.55rem] tracking-widest uppercase text-foreground/40">Sovereign Wealth</p>
