@@ -60,7 +60,7 @@ export default function HomePage() {
 
         {/* Main heading */}
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-foreground leading-[0.95] mb-8 max-w-4xl relative z-10">
-          How to Join Illuminati
+          How to Join The Illuminati
           <br />
           <em className="text-accent not-italic">Wealth & Power Belong To Those Who See.</em>
         </h1>

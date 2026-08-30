@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | IllUMINATI",
   },
   description:
-    "A foundation devoted to sight. To memory. To those who refused to look away. Classified materials — authorised access only.",
+    "A foundation devoted to sight. To memory. To those who refused to look away. Classified materials authorised access only.",
   keywords: ["illum", "the foundation", "the archive", "classified"],
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${displayFont.variable} ${monoFont.variable}`}>
-      <body className="antialiased bg-background text-foreground min-h-screen">
+      <body className="antialiased bg-background text foreground min-h-screen">
         <Nav />
         {/* pt-14 offsets fixed nav; pb-8 offsets fixed footer */}
         <div className="pt-14 pb-8">{children}</div>
