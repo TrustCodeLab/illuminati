@@ -153,7 +153,7 @@ export default function BenefitsSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 border border-accent/40 bg-accent/10">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             <span className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-accent font-semibold">
-              00 — THE FOUR PILLARS OF INITIATION
+              THE FOUR PILLARS OF INITIATION
             </span>
           </div>
         </ScrollReveal>
