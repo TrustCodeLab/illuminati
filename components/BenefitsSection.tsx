@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 interface BenefitItem {
@@ -8,6 +9,8 @@ interface BenefitItem {
   title: string;
   subtitle: string;
   tag: string;
+  image: string;
+  imageAlt: string;
   description: string;
   highlights: string[];
   icon: React.ReactNode;
@@ -19,6 +22,8 @@ const benefits: BenefitItem[] = [
     title: "FAME",
     subtitle: "Global Renown & Immortal Legacy",
     tag: "INFLUENCE: SUPREME",
+    image: "/images/images1.jpg",
+    imageAlt: "Elite prominence and cultural recognition",
     description:
       "Ascend from obscurity to the pinnacle of international recognition. Whether in arts, politics, business, or media, the Foundation amplifies your presence so your name commands reverence across continents and eras.",
     highlights: [
@@ -45,6 +50,8 @@ const benefits: BenefitItem[] = [
     title: "WEALTH",
     subtitle: "Sovereign Riches & Infinite Abundance",
     tag: "PROSPERITY: INFINITE",
+    image: "/images/02_2.webp",
+    imageAlt: "Sovereign estate and boundless liquid prosperity",
     description:
       "Unlock access to sovereign financial architectures, high-yield global syndicate channels, and inexhaustible liquid abundance. In the Brotherhood, wealth is not merely pursued—it flows as an unyielding law of nature.",
     highlights: [
@@ -73,6 +80,8 @@ const benefits: BenefitItem[] = [
     title: "POWER",
     subtitle: "Architectural Control & Global Authority",
     tag: "AUTHORITY: SOVEREIGN",
+    image: "/images/inner_circle.png",
+    imageAlt: "Grand assembly and strategic world command",
     description:
       "Command the unseen levers of civilization. Initiate members wield strategic authority across industries, governance, and markets, directing modern history from behind the impenetrable veil of mastery.",
     highlights: [
@@ -101,6 +110,8 @@ const benefits: BenefitItem[] = [
     title: "PROTECTION",
     subtitle: "Impenetrable Aegis & Lineage Shield",
     tag: "SANCTUARY: ABSOLUTE",
+    image: "/images/vault.png",
+    imageAlt: "Fortified underground archive and permanent sanctuary",
     description:
       "Walk the world under an inviolable shield. An omnipresent global intelligence network, elite legal defenses, and diplomatic sanctuary guarantee the safety, privacy, and sovereignty of you and your bloodline.",
     highlights: [
@@ -165,7 +176,7 @@ export default function BenefitsSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
         {benefits.map((item, idx) => (
           <ScrollReveal key={item.title} delay={0.08 * (idx + 1)}>
-            <div className="group relative h-full flex flex-col justify-between p-8 sm:p-10 bg-background/60 border border-foreground/15 hover:border-accent/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(138,31,31,0.2)]">
+            <div className="group relative h-full flex flex-col justify-between p-8 sm:p-10 bg-background/60 border border-foreground/15 hover:border-accent/60 transition-all duration-500 hover:shadow-[0_0_35px_rgba(138,31,31,0.25)]">
               {/* Corner decorative notch */}
               <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-accent/40 group-hover:border-accent group-hover:w-5 group-hover:h-5 transition-all duration-300" />
               <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-accent/40 group-hover:border-accent group-hover:w-5 group-hover:h-5 transition-all duration-300" />
@@ -192,6 +203,20 @@ export default function BenefitsSection() {
                 <p className="font-mono text-xs text-accent/80 tracking-wider mb-5 italic">
                   {item.subtitle}
                 </p>
+
+                {/* Atmospheric Pillar Image Card */}
+                <div className="relative w-full h-48 sm:h-52 mb-6 border border-foreground/15 group-hover:border-accent/50 overflow-hidden shadow-md transition-colors duration-500">
+                  <Image
+                    src={item.image}
+                    alt={item.imageAlt}
+                    fill
+                    className="object-cover object-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/25" />
+                  <div className="absolute top-2 right-2 px-2 py-0.5 bg-background/80 border border-foreground/10 text-[0.55rem] font-mono tracking-widest uppercase text-foreground/50">
+                    ARCHIVE #{item.number}
+                  </div>
+                </div>
 
                 <p className="font-mono text-sm text-foreground/65 leading-relaxed mb-6">
                   {item.description}
