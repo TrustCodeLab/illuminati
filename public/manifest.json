@@ -1,0 +1,22 @@
+{
+  "name": "Illuminati Foundation",
+  "short_name": "Illuminati",
+  "description": "A foundation devoted to sight. To memory. To those who refused to look away.",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

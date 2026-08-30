@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -16,6 +16,7 @@ const NAV_LINKS = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,9 +27,14 @@ export default function Nav() {
   }, []);
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
+    if (pathname === "/") {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      router.push("/#contact");
+    }
   };
 
   return (
@@ -39,13 +45,13 @@ export default function Nav() {
         }`}
     >
       <nav
-        className="mx-auto max-w-7xl px-6 h-14 flex items-center justify-between"
+        className="relative mx-auto max-w-7xl px-6 h-14 flex items-center justify-between"
         aria-label="Primary navigation"
       >
-        {/* Wordmark */}
+        {/* Wordmark (Left) */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 group"
+          className="flex items-center gap-2.5 group z-10"
           aria-label="ILLUM — Home"
         >
           <Image
@@ -60,18 +66,19 @@ export default function Nav() {
           </span>
         </Link>
 
-        {/* Desktop links */}
-        <ul className="hidden lg:flex items-center gap-7">
+        {/* Centered Desktop Navigation Links */}
+        <ul className="hidden lg:flex items-center flex-nowrap gap-6 xl:gap-7 absolute left-1/2 -translate-x-1/2 w-max">
           {NAV_LINKS.map(({ label, href }) => {
             const isActive = pathname === href;
             return (
-              <li key={label}>
+              <li key={label} className="whitespace-nowrap">
                 <Link
                   href={href}
-                  className={`font-mono text-[0.7rem] tracking-widest uppercase transition-colors duration-200 relative py-1 ${isActive
+                  className={`font-mono text-[0.68rem] xl:text-[0.7rem] tracking-widest uppercase whitespace-nowrap transition-colors duration-200 relative py-1 inline-block ${
+                    isActive
                       ? "text-accent font-semibold"
                       : "text-foreground/60 hover:text-foreground"
-                    }`}
+                  }`}
                 >
                   {label}
                   {isActive && (
@@ -81,16 +88,18 @@ export default function Nav() {
               </li>
             );
           })}
-          <li>
-            <a
-              href="#contact"
-              onClick={handleContactClick}
-              className="font-mono text-[0.7rem] tracking-widest uppercase px-3 py-1.5 border border-accent text-accent hover:bg-accent hover:text-foreground transition-all duration-200"
-            >
-              CONTACT
-            </a>
-          </li>
         </ul>
+
+        {/* Right Action (Contact Button on Desktop) */}
+        <div className="hidden lg:flex items-center z-10">
+          <Link
+            href="/#contact"
+            onClick={handleContactClick}
+            className="font-mono text-[0.7rem] tracking-widest uppercase px-3 py-1.5 border border-accent text-accent hover:bg-accent hover:text-foreground transition-all duration-200"
+          >
+            CONTACT
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -137,13 +146,13 @@ export default function Nav() {
             );
           })}
           <li>
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={handleContactClick}
               className="font-mono text-[0.7rem] tracking-widest uppercase text-accent"
             >
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

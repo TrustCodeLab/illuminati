@@ -53,7 +53,7 @@ const benefits: BenefitItem[] = [
     image: "/images/ca-times.brightspotcdn.jpg",
     imageAlt: "Bespoke architectural estate, fleet of luxury supercars, and sovereign abundance",
     description:
-      "Unlock access to sovereign financial architectures, high-yield global syndicate channels, and inexhaustible liquid abundance. In the Brotherhood, wealth is not merely pursued—it flows as an unyielding law of nature.",
+      "Unlock access to sovereign financial architectures, high yield global syndicate channels, and inexhaustible liquid abundance. In the Brotherhood, wealth is not merely pursued it flows as an unyielding law of nature.",
     highlights: [
       "Direct conduits to sovereign wealth & international banking",
       "Generational trusts safeguarding asset immunity",
