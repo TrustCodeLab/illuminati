@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, IBM_Plex_Mono } from "next/font/google";
+import { Roboto_Mono, IBM_Plex_Mono } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
-// Gothic/serif display font for headings
-const displayFont = Cormorant_Garamond({
+// Monkeytype iconic font for titles & headings
+const displayFont = Roboto_Mono({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
