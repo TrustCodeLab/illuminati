@@ -54,7 +54,7 @@ export default function Nav() {
             className="text-accent transition-colors duration-300 group-hover:text-foreground"
           />
           <span className="font-display text-xl tracking-[0.3em] uppercase text-foreground group-hover:text-accent transition-colors duration-300">
-            ILLUM
+            666
           </span>
         </Link>
 
