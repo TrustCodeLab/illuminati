@@ -22,8 +22,8 @@ const benefits: BenefitItem[] = [
     title: "FAME",
     subtitle: "Global Renown & Immortal Legacy",
     tag: "INFLUENCE: SUPREME",
-    image: "/images/images1.jpg",
-    imageAlt: "Elite prominence and cultural recognition",
+    image: "/images/dfg.jpg",
+    imageAlt: "World leaders, tech titans and global prominence",
     description:
       "Ascend from obscurity to the pinnacle of international recognition. Whether in arts, politics, business, or media, the Foundation amplifies your presence so your name commands reverence across continents and eras.",
     highlights: [
@@ -50,8 +50,8 @@ const benefits: BenefitItem[] = [
     title: "WEALTH",
     subtitle: "Sovereign Riches & Infinite Abundance",
     tag: "PROSPERITY: INFINITE",
-    image: "/images/02_2.webp",
-    imageAlt: "Sovereign estate and boundless liquid prosperity",
+    image: "/images/ca-times.brightspotcdn.jpg",
+    imageAlt: "Bespoke architectural estate, fleet of luxury supercars, and sovereign abundance",
     description:
       "Unlock access to sovereign financial architectures, high-yield global syndicate channels, and inexhaustible liquid abundance. In the Brotherhood, wealth is not merely pursued—it flows as an unyielding law of nature.",
     highlights: [
@@ -210,7 +210,7 @@ export default function BenefitsSection() {
                     src={item.image}
                     alt={item.imageAlt}
                     fill
-                    className="object-cover object-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-700"
+                    className="object-cover object-center brightness-95 contrast-105 group-hover:brightness-105 group-hover:contrast-110 group-hover:scale-105 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/25" />
                   <div className="absolute top-2 right-2 px-2 py-0.5 bg-background/80 border border-foreground/10 text-[0.55rem] font-mono tracking-widest uppercase text-foreground/50">
